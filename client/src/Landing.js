@@ -25,7 +25,7 @@ class Landing extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://kendeployment.herokuapp.com/posts/')
+    axios.get('http://localhost:3001/posts/')
       .then(response => {
         this.setState({ comments: response.data })
       })
