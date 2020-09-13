@@ -25,7 +25,7 @@ class Landing extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://kendeployment.herokuapp.com/posts/')
+    axios.get('https://kendeployment.herokuapp.com/posts/')
       .then(response => {
         this.setState({ comments: response.data })
       })
@@ -35,8 +35,6 @@ class Landing extends React.Component {
   }
 
   render() {
-
-    
     return (
       <div id="wrapper">        
             { this.mongoData() }          
